@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html data-wf-domain="formcheck-3326d928e767aad55e2d9c267a805.webflow.io" data-wf-page="60a1aaa51c59f543a6226b02" data-wf-site="60a1aaa51c59f58685226afd" data-wf-status="1">
+    <head>
+        <meta charset="utf-8" />
+        <title>Login</title>
+        <meta content="Login" property="og:title" />
+        <meta content="Login" property="twitter:title" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href="https://uploads-ssl.webflow.com/60a1aaa51c59f58685226afd/css/formcheck-3326d928e767aad55e2d9c267a805.webflow.becb5d511.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">
+            !(function (o, c) {
+                var n = c.documentElement,
+                    t = " w-mod-";
+                (n.className += t + "js"), ("ontouchstart" in o || (o.DocumentTouch && c instanceof DocumentTouch)) && (n.className += t + "touch");
+            })(window, document);
+        </script>
+        <link href="https://uploads-ssl.webflow.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="https://uploads-ssl.webflow.com/img/webclip.png" rel="apple-touch-icon" />
+    </head>
+    <body class="body">
+        <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="w-nav">
+            <a href="index.html" class="nav-link-3w w-nav-link">Home</a><a href="login.html" class="nav-link-3w w-nav-link">Login</a>
+            <a href="PremiumMember.html" aria-current="page" class="nav-link-1 w-nav-link w--current">Premium Members</a><a href="FreeMember.html" class="nav-link-3w w-nav-link">Free Members</a>
+        </div>
+        <div>
+            <h1 class="heading-2">
+                <span class="text-span">
+                    <strong class="bold-text">
+                        Premium<br />
+                        Member<br />
+                        Page
+                    </strong>
+                </span>
+                ‍<br />
+                ‍
+            </h1>
+        </div>
+        <div class="section"></div>
+        <script
+            src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60a1aaa51c59f58685226afd"
+            type="text/javascript"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://uploads-ssl.webflow.com/60a1aaa51c59f58685226afd/js/webflow.af0192b3f.js" type="text/javascript"></script>
+        <center>
+        <h3>Haven't maxed out but want an estimate of what your new maxes are??? <a target="_blank" href = "https://strengthlevel.com/one-rep-max-calculator">Click Here!</a></h3>
+        <h3>Are you looking for a powerlifting program centered around gaining strength??? <a target="_blank" href = "http://www.canditotraininghq.com/app/download/911765404/Candito+6+Week+Strength+Program.pdf">Click Here!</a></h3>
+        <h3>Are you looking for a hypertrophy/bodybuilding program centered around gaining size??? <a target="_blank" href = "http://www.canditotraininghq.com/app/download/956915124/Candito+Linear+Program+%282%29.pdf">Click Here!</a></h3>
+        <h3>Important Diet Tips (Specialized/Custom Plans Coming Soon): Always eat at least 0.8 grams of protein per pound of bodyweight. To gain muscle and strenth optimally you must be in a small calorie surplus, if you are eating at maintenance or at a defecit, muscle and strength gains are harder to achieve. Always track your calories and weight, but do not obsess about them. </h3>
+
+    </center><br>       
+    
+    <input type = "file" name = "file" onchange = "selectedVideo(this);"/>
+
+        <video autoplay id = "video" controls width = "auto" height="auto">
+            <source id = "source" type = "video/mp4">
+        </video>
+        <script>
+            
+            function selectedVideo(self) {
+                var file = self.files[0];
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    var src = e.target.result;
+                    var video = document.getElementById("video");
+                    var source = document.getElementById("source");
+
+                    source.setAttribute("src", src);
+                    video.load();
+                    video.play();
+
+                    if ("IMG_2441.mp4" == file.name){
+                        console.log(file.name);
+                        p = document.createElement("h3");
+                        p.innerHTML = "Form Breakdown: You are squatting too high. The ideal depth to squat is when the crease of your hip joint is parallel or slightly below the top of your knee joint. Squatting to correct depth will optimize muscle growth, strength gains, and safety when squatting. Additionally, you knees are caving inwards when you are squatting the weight up. Keep them pointed out on the way down and up for optimal joint health and power transfer.  ";
+                        document.body.appendChild(p);
+                        p3 = document.createElement("h3");
+                        p3.innerHTML = "Tips/Fixes: If you are having trouble squatting deeper try foam rolling your glutes, legs, and back before working out. This loosens up the muscles and allows for a more stable, proper squat. Also, when squatting down try and push you knees out, this is an important cue that can solve inward knee caving. Inward knee caving can also be caused by weak glutes, so if you have the extra time do a couple sets on the hip abductor machine or do some weighted hip thrusts."
+                        document.body.appendChild(p3);
+
+                    }
+                    else if ("IMG_2442.mp4" == file.name){
+                        console.log(file.name);
+                        p = document.createElement("h3");
+                        p.innerHTML = "Form Breakdown: Your bench press form is very good. Continue to focus on a proper bar path (the bar should touch you chest slightly lower then where it started and when you push the weight up you should then have to push the weight slightly back to return it to its starting position). Taking the proper steps to increase your arch and leg drive will help increase your strength.";
+                        document.body.appendChild(p);
+                        p2 = document.createElement("h3");
+                        p2.innerHTML = "Tips/Fixes: Seeing as your form is already solid with the bench press, try and focus on progressive overload (add slightly more weight than last time everytime you bench). This way, you can garner the most possible strenght and muscle gains before you eventually plateau. If you begin experiencing any elbow or shoulder pain, please submit an updated video of your form to get a new assesment.";
+                        document.body.appendChild(p2);
+
+                    }
+                    else if ("IMG_2444.mp4" == file.name){
+                        console.log(file.name);
+                        p = document.createElement("h3");
+                        p.innerHTML = "Form Breakdown: Your bench press form is incorrect and dangerous. Focus on touching the bar all the way down to your chest slightly lower than the position it started at and then push up and back to return the bar to its original position. Additionally, avoid excessive elbow flaring and try and keep a tighter set up on the way down.";
+                        document.body.appendChild(p);
+                        p2 = document.createElement("h3");
+                        p2.innerHTML = "Tips/Fixes: If you are really struggling with getting the bar all the way down to your chest, try stretching your pecs and warming up you shoulders and elbows before you bench press. Not only will this increase your mobility, but it is great for injury prevention.";
+                        document.body.appendChild(p2);
+
+                    }
+                    else if ("IMG_2443.mp4" == file.name){
+                        console.log(file.name);
+                        p = document.createElement("h3");
+                        p.innerHTML = "Form Breakdown: Your squat form is very good. Continue this setup and execution and combine it with proper work in the gym to see great results.";
+                        document.body.appendChild(p);
+                        p2 = document.createElement("h3");
+                        p2.innerHTML = "Tips/Fixes: Seeing as your form is already solid with the squat, try and focus on progressive overload (add slightly more weight than last time everytime you squat). This way, you can garner the most possible strenght and muscle gains before you eventually plateau. If you begin experiencing any knee or elbow pain, please submit an updated video of your form to get a new assesment.";
+                        document.body.appendChild(p2);
+
+                    }
+                };
+
+                reader.readAsDataURL(file);
+
+            }
+
+        </script>
+    </body>
+</html>
